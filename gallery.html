@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+  <meta charset="UTF-8">
+  <title>Gallery </picture></title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 15px;
+      margin-top: 30px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .selector {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    select {
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .fake-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #ccc;
+      color: #fff;
+      border-radius: 5px;
+      cursor: not-allowed;
+      text-decoration: none;
+      font-weight: bold;
+      opacity: 0.6;
+    }
+  </style>
+</head>
+<body>
+
+  <h1> Welcome to gallery</h1>
+
+  <div class="gallery">
+    <img src="el-futuro-estadio-camp-nou-de-barcelona-recibe-el-premio-internacional-de-arquitectura-iaa-2023_1.jpg" alt="Фото 1">
+    <img src="sagrada.jpeg" alt="Фото 2">
+    <img src="gothicquarter.jpg" alt="Фото 3">
+    <img src="parc-d-atraccions-tibidabo.jpg" alt="Фото 4">
+    <img src="museunacional.jpg" alt="Фото 5">
+    <img src="barcelonabeach.jpg" alt="Фото 6">
+    <img src="Carmel-del-Bunkers-Barcelona-20-689x517.jpg" alt="Фото 6">
+  </div>
+
+  <div class="selector">
+    <h2>Choose photo that you liked most:</h2>
+    <select>
+      <option disabled selected>-- option --</option>
+      <option>Camp nou </option>
+      <option>Sagrada</option>
+      <option> gothicquarter</option>
+      <option>tibidabo</option>
+      <option>beach</option>
+      <option>bunkers</option>
+    </select>
+
+    <div class="fake-button">I liked this</div>
+  </div>
+
+</body>
+<footer> 
+    <a href="index.html"> Back to main page </a> 
+        
+    <a href="contacts.html">This is contacs </a>
+</footer>
+</html>
