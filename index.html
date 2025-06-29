@@ -1,40 +1,128 @@
 <!DOCTYPE html>
-<html>
-    <head> 
-        <title> Where I would like to go </title>
-        <h1> Hi, this is my list of places which I'd like to visit in Barcelona </h1>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Where I Would Like to Go</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
 
-    </head>
+        #title {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 40px;
+        }
+
+        .place {
+            background-color: #fff;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .place img {
+            width: 100%;
+            max-width: 550px;
+            height: auto;
+            display: block;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+
+        #footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 14px;
+        }
+
+        #footer a {
+            color: #2980b9;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        #footer a:hover {
+            text-decoration: underline;
+        }
+
+        #top-button {
+            display: block;
+            width: fit-content;
+            margin: 40px auto 0;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        #top-button:hover {
+            background-color: #2c80b4;
+        }
+    </style>
+</head>
 <body>
-    <div> <li> #1 Camp nou stadium of Barcelona FC  </li>
-    <img src="el-futuro-estadio-camp-nou-de-barcelona-recibe-el-premio-internacional-de-arquitectura-iaa-2023_1.jpg" width="550"> 
-     <p> I visit this place on matchday  </p>
-    <li> #2 Sagrada Familia.  </li>
-    <img src="sagrada.jpeg" width="550">
-     <br> <b>UNFINISHED</b>. Gaudi to his credit, never gave up on his dream. But that's not usually how it goes. 
-     I mean usually it isn't a speeding bus that keeps the brown pointy weird church from getting build. Most of the time it's just too difficult or too expensive or too scary.
-      It's only once you've stopped... that you realize how hard it is to start again. So you force yourself not to want it. 
-      But it's always there and until you finish it, it will always be...<i>(unfinished)</i></br>
-    <li> #3 Gothic Quarter </li>
-    <img src="gothicquarter.jpg" width="550">
-    <li> #4 Tibidabo Funfair </li>
-    <!-- This is just a comment no worries, you saw nothing-->
-    <img src="parc-d-atraccions-tibidabo.jpg" width="550">
-    <li> #5 Museu Nacional</li>
-    <img src="museunacional.jpg" width="550">
-    <li> #6 Barcelona beach</li>
-    <img src="barcelonabeach.jpg" width="550">
-    <li> #7 The Carmel Bunkers</li>
-    <img src="Carmel-del-Bunkers-Barcelona-20-689x517.jpg" width="550">
-</div>
-    <footer> 
-    <a href="gallery.html">Pictures that I used </a> 
-        
-    <a href="contacts.html">This is contacs </a>
+
+    <h1 id="title">Hi, this is my list of places I'd like to visit in Barcelona</h1>
+
+    <div class="place" id="camp-nou">
+        <li>#1 Camp Nou Stadium of FC Barcelona</li>
+        <img src="el-futuro-estadio-camp-nou-de-barcelona-recibe-el-premio-internacional-de-arquitectura-iaa-2023_1.jpg" alt="Camp Nou">
+        <p>I want to visit this place on matchday.</p>
+    </div>
+
+    <div class="place" id="sagrada-familia">
+        <li>#2 Sagrada Familia</li>
+        <img src="sagrada.jpeg" alt="Sagrada Familia">
+        <p><b>UNFINISHED</b>. Gaudí never gave up on his dream...
+           until you finish it, it will always be <i>(unfinished)</i>.</p>
+    </div>
+
+    <div class="place" id="gothic-quarter">
+        <li>#3 Gothic Quarter</li>
+        <img src="gothicquarter.jpg" alt="Gothic Quarter">
+    </div>
+
+    <div class="place" id="tibidabo">
+        <li>#4 Tibidabo Funfair</li>
+        <img src="parc-d-atraccions-tibidabo.jpg" alt="Tibidabo">
+    </div>
+
+    <div class="place" id="museu-nacional">
+        <li>#5 Museu Nacional</li>
+        <img src="museunacional.jpg" alt="Museu Nacional">
+    </div>
+
+    <div class="place" id="barcelona-beach">
+        <li>#6 Barcelona Beach</li>
+        <img src="barcelonabeach.jpg" alt="Barcelona Beach">
+    </div>
+
+    <div class="place" id="carmel-bunkers">
+        <li>#7 The Carmel Bunkers</li>
+        <img src="Carmel-del-Bunkers-Barcelona-20-689x517.jpg" alt="Carmel Bunkers">
+    </div>
+
+    <button id="top-button" onclick="scrollToTop()">↑ Back to Top</button>
+
+    <footer id="footer">
+        <a href="gallery.html">Pictures that I used</a> |
+        <a href="contacts.html">Contacts</a>
     </footer>
 
+    <script>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
 
-    
- </body>
-
+</body>
 </html>
